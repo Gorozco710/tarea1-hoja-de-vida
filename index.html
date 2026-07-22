@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida - Geovanny Rafael Orozco Rodas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Geovanny Rafael Orozco Rodas</h1>
+
+        <picture>
+            <source srcset="imagenes/perfil.avif" type="image/avif">
+            <source srcset="imagenes/perfil.webp" type="image/webp">
+            <img src="imagenes/perfil.jpg" alt="Fotografía de perfil de Geovanny Orozco" width="415" height="585">
+        </picture>
+
+        <p><strong>Número de carnet:</strong> 202408034</p>
+        <p><strong>Número de teléfono:</strong> <a href="tel:+50252447407">+502 5244-7407</a></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li>Graduado de Bachillerato en Ciencias y Letras con Orientación en Computación.</li>
+                <li>Cursando 6.º semestre de Ingeniería en Sistemas con Orientación en Computación.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Nivel de inglés A2/B1</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Resolución de problemas</li>
+                <li>Pensamiento analítico</li>
+                <li>Adaptabilidad y aprendizaje rápido</li>
+                <li>Desarrollo de software</li>
+                <li>Gestión de bases de datos</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Videojuego de Plataformas 2D en Unity</li>
+                <li>Entorno Linux Personalizado</li>
+                <li>Base de Datos para Tienda</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiencia laboral</h2>
+            <p>Proyectos académicos e independientes en desarrollo de software y administración de sistemas.</p>
+        </section>
+
+        <section>
+            <h2>Contacto y Disponibilidad</h2>
+            
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Número de teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+
+                <p>
+                    <label for="hora_entrevista">Hora preferida de entrevista:</label><br>
+                    <input type="time" id="hora_entrevista" name="hora_entrevista" min="08:00" max="17:00" step="1800" required>
+                </p>
+
+                <p>
+                    <label for="modalidad">Modalidad de trabajo:</label><br>
+                    <select id="modalidad" name="modalidad" required>
+                        <option value="">-- Seleccione una opción --</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="carta_presentacion">Carta breve de presentación:</label><br>
+                    <textarea id="carta_presentacion" name="carta_presentacion" rows="5" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Enviar información</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
