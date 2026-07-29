@@ -1,40 +1,57 @@
+/* RESET Y ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     padding: 20px;
     background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .cv-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+/* FLEXBOX: HEADER */
+/* Se usó Flexbox porque los elementos se alinean en un solo eje vertical y centrado */
 header {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 20px;
     border-bottom: 3px solid #2c3e50;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 12px;
 }
 
 h1 {
     color: #2c3e50;
-    margin-bottom: 15px;
 }
 
 picture img {
     max-width: 150px;
     height: auto;
     border-radius: 8px;
-    margin: 0 auto 15px auto;
     display: block;
+}
+
+/* GRID RESPONSIVO AUTÓNOMO (SIN MEDIA QUERIES): SECCIONES DEL MAIN */
+/* Se usó CSS Grid con auto-fit y minmax para maquetar el contenido en 2 dimensiones */
+.grid-secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 main {
@@ -44,7 +61,14 @@ main {
 }
 
 section {
-    margin-bottom: 25px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* La sección de contacto toma todo el ancho del Grid si hay espacio disponible */
+.seccion-contacto {
+    grid-column: 1 / -1;
 }
 
 h2 {
@@ -62,31 +86,36 @@ li {
     margin-bottom: 8px;
 }
 
+/* FLEXBOX: FORMULARIO RESPONSIVO */
 form {
     background-color: #fafafa;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-form p {
-    margin-bottom: 12px;
+.campo-form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     font-weight: bold;
     color: #2c3e50;
+    margin-bottom: 4px;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 button {
