@@ -1,4 +1,3 @@
-/* RESET Y ESTILOS GENERALES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,8 +18,6 @@ body {
     margin: 0 auto;
 }
 
-/* FLEXBOX: HEADER */
-/* Se usó Flexbox porque los elementos se alinean en un solo eje vertical y centrado */
 header {
     background-color: #ffffff;
     padding: 25px;
@@ -46,8 +43,6 @@ picture img {
     display: block;
 }
 
-/* GRID RESPONSIVO AUTÓNOMO (SIN MEDIA QUERIES): SECCIONES DEL MAIN */
-/* Se usó CSS Grid con auto-fit y minmax para maquetar el contenido en 2 dimensiones */
 .grid-secciones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -66,7 +61,6 @@ section {
     border-radius: 6px;
 }
 
-/* La sección de contacto toma todo el ancho del Grid si hay espacio disponible */
 .seccion-contacto {
     grid-column: 1 / -1;
 }
@@ -85,8 +79,6 @@ ul {
 li {
     margin-bottom: 8px;
 }
-
-/* FLEXBOX: FORMULARIO RESPONSIVO */
 form {
     background-color: #fafafa;
     padding: 20px;
