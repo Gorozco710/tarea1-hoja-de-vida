@@ -21,7 +21,7 @@
             <p><strong>Número de teléfono:</strong> <a href="tel:+50252447407">+502 5244-7407</a></p>
         </header>
 
-        <main>
+        <main class="grid-secciones">
             <section>
                 <h2>Educación</h2>
                 <ul>
@@ -63,50 +63,50 @@
                 <p>Proyectos académicos e independientes en desarrollo de software y administración de sistemas.</p>
             </section>
 
-            <section>
+            <section class="seccion-contacto">
                 <h2>Contacto y Disponibilidad</h2>
                 
                 <form action="#" method="post">
-                    <p>
-                        <label for="nombre">Nombre completo:</label><br>
+                    <div class="campo-form">
+                        <label for="nombre">Nombre completo:</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="email">Correo electrónico:</label><br>
+                    <div class="campo-form">
+                        <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="telefono">Número de teléfono:</label><br>
+                    <div class="campo-form">
+                        <label for="telefono">Número de teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" required placeholder="+502 0000-0000">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="fecha_inicio">Fecha en que puede iniciar:</label><br>
+                    <div class="campo-form">
+                        <label for="fecha_inicio">Fecha en que puede iniciar:</label>
                         <input type="date" id="fecha_inicio" name="fecha_inicio" min="2026-08-01" max="2026-12-31" required>
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="hora_entrevista">Hora preferida de entrevista (Horario laboral):</label><br>
+                    <div class="campo-form">
+                        <label for="hora_entrevista">Hora preferida de entrevista (Horario laboral):</label>
                         <input type="time" id="hora_entrevista" name="hora_entrevista" min="08:00" max="17:00" step="1800" required>
                         <small>(Bloques de 30 minutos entre 08:00 y 17:00)</small>
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="modalidad">Modalidad de trabajo:</label><br>
+                    <div class="campo-form">
+                        <label for="modalidad">Modalidad de trabajo:</label>
                         <select id="modalidad" name="modalidad" required>
                             <option value="" disabled selected>Seleccione una opción</option>
                             <option value="remoto">Remoto</option>
                             <option value="presencial">Presencial</option>
                             <option value="hibrido">Híbrido</option>
                         </select>
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="carta_presentacion">Carta breve de presentación:</label><br>
+                    <div class="campo-form">
+                        <label for="carta_presentacion">Carta breve de presentación:</label>
                         <textarea id="carta_presentacion" name="carta_presentacion" rows="5" cols="40" required placeholder="Escriba una breve presentación aquí..."></textarea>
-                    </p>
+                    </div>
 
                     <button type="submit">Enviar información</button>
                 </form>
