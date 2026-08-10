@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Geovanny Orozco</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="proyectos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Geovanny Orozco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hoja de vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="proyectos.html">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-5 text-center">
+        <h1>Mis Proyectos Académicos</h1>
+        <p class="lead">Proyectos desarrollados durante la carrera de Ingeniería en Sistemas.</p>
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+    </header>
+
+    <main id="proyectos" class="container my-5">
+        <h2 class="mb-4">Trabajos realizados</h2>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="imagenes/proyecto1.png" class="card-img-top" alt="Dashboard de NetGuardian OS">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2 w-auto align-self-start">Sistemas Operativos</span>
+                        <h3 class="h5 card-title">NetGuardian OS: Distribución Linux Personalizada</h3>
+                        <p class="card-text flex-grow-1">
+                            Distribución Live ISO personalizada basada en Arch Linux, orientada al monitoreo de infraestructura y diagnóstico de redes en tiempo real. Integra un entorno gráfico ligero tipo Kiosco implementado sobre Openbox y Chromium, el cual despliega un dashboard centralizado que automatiza la ejecución de comandos de auditoría como Nmap y Tcpdump. Adicionalmente, implementa arquitectura en contenedores Docker para aislar servicios de análisis y utiliza timers de Systemd para gestionar la depuración automática de logs y tareas del sistema.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Arch Linux</span>
+                            <span class="badge bg-dark">Docker</span>
+                            <span class="badge bg-info text-dark">Systemd</span>
+                            <span class="badge bg-secondary">Openbox</span>
+                        </div>
+                        <button class="btn btn-primary mt-auto" disabled>Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="imagenes/proyecto2.png" class="card-img-top" alt="Panel de administración Portal Cautivo">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2 w-auto align-self-start">Redes I</span>
+                        <h3 class="h5 card-title">Portal Cautivo para Control de Redes Empresariales</h3>
+                        <p class="card-text flex-grow-1">
+                            Sistema integral de autenticación y gestión de red inalámbrica desplegado en un servidor Ubuntu Server. Implementa un portal cautivo mediante OpenNDS para interceptar y validar el tráfico de los usuarios antes de otorgar acceso a la red, combinándolo con un motor de filtrado DNS basado en Dnsmasq para bloquear dominios no autorizados y aplicar políticas de navegación por roles. Toda la administración de credenciales, consumo de ancho de banda y registro de sesiones opera bajo un panel de control propio construido sobre una arquitectura LNMP (Linux, Nginx, MariaDB, PHP-FPM).
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning text-dark">Ubuntu Server</span>
+                            <span class="badge bg-danger">Nginx</span>
+                            <span class="badge bg-success">PHP-FPM</span>
+                            <span class="badge bg-info text-dark">MariaDB</span>
+                        </div>
+                        <button class="btn btn-primary mt-auto" disabled>Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="imagenes/proyecto3.png" class="card-img-top" alt="Interfaz de usuario Geovanny's Barber">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2 w-auto align-self-start">Ingeniería de Software I</span>
+                        <h3 class="h5 card-title">Sistema de Gestión e Inventario - Geovanny's Barber</h3>
+                        <p class="card-text flex-grow-1">
+                            Aplicación de escritorio modular construida en Python aplicando principios de Programación Orientada a Objetos (POO) y una interfaz gráfica personalizada mediante Tkinter y TTK. El software automatiza las operaciones operativas y administrativas del negocio a través de 5 formularios interactivos: control perimetral de acceso e inicio de sesión de usuarios, agendamiento y reprogramación de citas, cálculo automatizado de comisiones para los barberos según servicios prestados, gestión y alertas de inventario de productos, y un sistema integrado para la emisión de facturas y cierres de caja.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Python</span>
+                            <span class="badge bg-primary">Tkinter / TTK</span>
+                            <span class="badge bg-dark">POO</span>
+                        </div>
+                        <button class="btn btn-primary mt-auto" disabled>Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="container my-5">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo de contacto</label>
+                <select class="form-select" id="motivo" name="motivo" required>
+                    <option value="" selected disabled>Seleccione una opción...</option>
+                    <option value="1">Consulta de proyecto</option>
+                    <option value="2">Propuesta académica</option>
+                    <option value="3">Otro</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
