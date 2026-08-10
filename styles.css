@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cv-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2c3e50;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+picture img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+.grid-secciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.seccion-contacto {
+    grid-column: 1 / -1;
+}
+
+h2 {
+    color: #16a085;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    
+    margin-bottom: 8px;
+}
+
+form {
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #16a085;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #117a65;
+}
+
+a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu-navegacion {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.menu-navegacion a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-navegacion a:hover {
+    text-decoration: underline;
+}
